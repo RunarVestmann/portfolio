@@ -1,0 +1,15 @@
+.project {
+    margin: 1rem;
+    text-align: center;
+}
+
+.project img {
+    width: 16rem;
+    height: 9rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.project p {
+    font-size: 1.2rem;
+}

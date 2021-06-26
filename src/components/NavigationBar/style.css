@@ -1,0 +1,21 @@
+.nav-link {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+.selected-nav-link {
+    border-bottom: 1px solid white;
+}
+
+@media only screen and (max-width: 700px) {
+    .nav-link {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .nav-link {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,25 @@
+#about {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#about img {
+    height: 8rem;
+    border-radius: 50%;
+}
+
+#about p {
+    margin-left: 0.5rem;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-top: 0;
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 700px) {
+    #about p {
+        width: 90%;
+    }
+}

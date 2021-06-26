@@ -1,0 +1,9 @@
+#contact p {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+    #contact p {
+        font-size: 1.2rem;
+    }
+}
