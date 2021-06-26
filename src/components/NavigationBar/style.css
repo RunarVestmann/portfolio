@@ -1,3 +1,7 @@
+nav {
+    margin-top: 0.5rem;
+}
+
 .nav-link {
     margin-right: 1rem;
     margin-left: 1rem;
@@ -16,6 +20,6 @@
 
 @media only screen and (max-width: 440px) {
     .nav-link {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
