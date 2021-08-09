@@ -47,10 +47,6 @@ a:hover {
     min-width: 40rem;
 }
 
-.message {
-    /* width: 80%; */
-}
-
 .contact-btn {
     align-self: flex-end;
 }

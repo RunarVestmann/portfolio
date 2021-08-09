@@ -7,6 +7,7 @@ const Contact = () => {
     const [messageStatus, setMessageStatus] = useState({ messageSent: false, sendingMessage: false });
     const handleChange = (ev) => setState((state) => ({ ...state, [ev.target.name]: ev.target.value }));
     const [errors, setErrors] = useState({});
+    const [messageSendText, setMessageSendText] = useState('');
     const handleSubmit = () => {
         const errors = {};
         if (state.subject.length === 0) errors.subject = 'Subject is required';
@@ -17,13 +18,18 @@ const Contact = () => {
     };
 
     const sendMessage = async () => {
-        await fetch('https://contact-runarvestmann.herokuapp.com/contact', {
+        const response = await fetch('https://contact-runarvestmann.herokuapp.com/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(state),
         });
+        setMessageSendText(
+            response.ok
+                ? 'You message has been delivered'
+                : 'Your message could not be delivered, please try again later',
+        );
         setMessageStatus({ messageSent: true, sendingMessage: false });
     };
 
@@ -31,7 +37,7 @@ const Contact = () => {
         <div className="section">
             <div id="contact">
                 {messageStatus.sendingMessage && <CircularProgress />}
-                {messageStatus.messageSent && <Typography variant="h4">Your message has been delivered</Typography>}
+                {messageStatus.messageSent && <Typography variant="h4">{messageSendText}</Typography>}
                 {!messageStatus.messageSent && !messageStatus.sendingMessage && (
                     <>
                         <TextField
@@ -53,7 +59,6 @@ const Contact = () => {
                             onChange={handleChange}
                             name="message"
                             margin="dense"
-                            className="message"
                             InputProps={{ style: { marginBottom: '2rem' } }}
                             size="medium"
                             label="Message"
