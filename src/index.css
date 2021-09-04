@@ -51,6 +51,7 @@ a:hover {
     align-self: flex-end;
 }
 
-.contact-btn:hover {
+.contact-btn:hover,
+.back-btn:hover {
     opacity: 0.8;
 }

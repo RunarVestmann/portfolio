@@ -1,8 +1,10 @@
 import { TextField, Button, CircularProgress, Typography } from '@material-ui/core';
 import { useState } from 'react';
+import { useHistory } from 'react-router';
 import './style.css';
 
 const Contact = () => {
+    const history = useHistory();
     const [state, setState] = useState({ subject: '', message: '', from: '' });
     const [messageStatus, setMessageStatus] = useState({ messageSent: false, sendingMessage: false });
     const handleChange = (ev) => setState((state) => ({ ...state, [ev.target.name]: ev.target.value }));
@@ -45,7 +47,25 @@ const Contact = () => {
                 }}
             >
                 {messageStatus.sendingMessage && <CircularProgress />}
-                {messageStatus.messageSent && <Typography variant="h4">{messageSendText}</Typography>}
+                {messageStatus.messageSent && (
+                    <div>
+                        <Typography variant="h4">{messageSendText}</Typography>
+                        <Button
+                            size="small"
+                            style={{
+                                backgroundColor: '#b66a0c',
+                                fontWeight: 'bold',
+                                marginTop: '2rem',
+                            }}
+                            variant="contained"
+                            className="back-btn"
+                            onClick={() => history.push('/')}
+                            type="submit"
+                        >
+                            Back to homepage
+                        </Button>
+                    </div>
+                )}
                 {!messageStatus.messageSent && !messageStatus.sendingMessage && (
                     <>
                         <TextField

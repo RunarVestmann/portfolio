@@ -1,4 +1,4 @@
-import { FaLinkedinIn, FaGithub, FaItchIo } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub, FaItchIo, FaTwitter, FaYoutube } from 'react-icons/fa';
 import './style.css';
 
 const Home = () => {
@@ -18,6 +18,12 @@ const Home = () => {
                     </a>
                     <a href="https://runarvestmann.itch.io" target="_blank" rel="noreferrer">
                         <FaItchIo className="icon" />
+                    </a>
+                    <a href="https://twitter.com/RunarVestmann" target="_blank" rel="noreferrer">
+                        <FaTwitter className="icon" />
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCzozM3fmOkAQND1OK70zRqA" target="_blank" rel="noreferrer">
+                        <FaYoutube className="icon" />
                     </a>
                 </div>
             </div>

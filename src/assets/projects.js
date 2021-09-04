@@ -10,6 +10,11 @@ export const projects = [
         title: 'Minesweeper',
     },
     {
+        href: 'https://github.com/RunarVestmann/ice-chess',
+        image: require('./ice-chess.png'),
+        title: 'Online 2 Player Chess',
+    },
+    {
         href: 'https://gitlab.com/RunarVestmann/toddler',
         image: require('./Toodler.png'),
         title: 'Toodler',
