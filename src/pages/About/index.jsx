@@ -8,7 +8,7 @@ const About = () => {
         <div className="section">
             <div id="about">
                 <div>
-                    <img onLoad={fadeIn} src={authorImage} alt="author" />
+                    <img onDragStart={(evt) => evt.preventDefault()} onLoad={fadeIn} src={authorImage} alt="author" />
                 </div>
                 <p>
                     Hi there! My <span className="emphasis">name</span> is{' '}
