@@ -1,5 +1,6 @@
 import authorImage from '../../assets/rv.JPEG';
 import { calculateAge } from '../../utils/age';
+import { fadeIn } from '../../utils/fadeIn';
 import './style.css';
 
 const About = () => {
@@ -7,7 +8,7 @@ const About = () => {
         <div className="section">
             <div id="about">
                 <div>
-                    <img src={authorImage} alt="author" />
+                    <img onLoad={fadeIn} src={authorImage} alt="author" />
                 </div>
                 <p>
                     Hi there! My <span className="emphasis">name</span> is{' '}
