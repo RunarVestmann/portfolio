@@ -44,6 +44,11 @@ export const projects = [
         image: require('./Starship.png'),
         title: 'Starship',
     },
+    {
+        href: 'https://lonebandit.itch.io/lone-bandit',
+        image: require('./LoneBandit.png'),
+        title: 'Lone Bandit',
+    },
 ];
 
 export default projects;
