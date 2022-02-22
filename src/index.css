@@ -1,61 +1,62 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ::selection {
-    background-color: #6d3e04;
+  background-color: #6d3e04;
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assets/laptop-background.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    color: white;
-    font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("assets/laptop-background.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 img {
-    user-select: none;
+  user-select: none;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 a:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .emphasis {
-    color: #b66a0c;
+  color: #b66a0c;
 }
 
 .section {
-    margin-top: 30vh;
-    margin-left: 15vw;
+  margin-top: 30vh;
+  margin-left: 15vw;
 }
 
 #contact {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 80%;
 }
 
 .subject {
-    width: 50%;
-    min-width: 40rem;
+  width: 50%;
+  min-width: 40rem;
 }
 
 .contact-btn {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 .contact-btn:hover,
 .back-btn:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
