@@ -4,7 +4,10 @@ import {
   FaItchIo,
   FaTwitter,
   FaYoutube,
+  // FaPatreon,
 } from "react-icons/fa";
+// import { BsMedium } from "react-icons/bs";
+
 import "./style.css";
 
 const Home = () => {
@@ -51,6 +54,20 @@ const Home = () => {
           >
             <FaYoutube className="icon" />
           </a>
+          {/* <a
+            href="https://medium.com/@runarvestmann"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsMedium className="icon" />
+          </a> */}
+          {/* <a
+            href="https://www.patreon.com/runarvestmann"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaPatreon className="icon" />
+          </a> */}
         </div>
       </div>
     </div>
